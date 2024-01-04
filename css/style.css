@@ -27,6 +27,7 @@ button {
 } */
 
 header {
+    height: 56px;
     padding: 20px;
     font-size: 20px;
     display: flex;
@@ -36,6 +37,10 @@ header {
 
 #btn-3 {
     display: inline-flex;
+}
+
+header button.btn-icon:hover {
+    background-color: rgb(0 0 1 0)
 }
 
 img {
@@ -103,5 +108,82 @@ ul {
 /* header end */
 
 /* aside start */
+aside {
+    height:calc(100vh- 56px);
+    display: flex;
+    background-color: #f9f9f9;
+    
+}
+
+aside div {
+    height:calc(100vh- 56px) ;
+    width: 230px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding-right:10px;
+    
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding:10px 16px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+a:hover {
+    background-color:#e5e5e5;
+}
+
+span {
+    padding-left:10px ;
+    font-size: 1rem;
+    line-height:2em;
+    color: #303030;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.active:visited {
+    background-color: #e5e5e5;
+}
+
+#active-span:visited {
+    font-weight: 900;
+}
+
+hr {
+    border: none;
+    background-color:#e5e5e5;
+    height: 1px;
+    margin: 5px 3px;
+}
+
+.next {
+    margin-right: 3px;
+    margin-left: -5px;
+}
+
+.button-margin {
+    margin-left: -90px;
+}
+
+p {
+    font-size: 1rem;
+    line-height:2em;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+
 
 /* aside end */
